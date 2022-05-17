@@ -12565,16 +12565,14 @@ h5, .h5 {
 
 body .pageContent {
   position: relative;
-  max-width: 1366px;
   width: 100%;
-  margin: 0 auto;
   background-repeat: no-repeat;
 }
 body .pageContent #myBtn {
   display: block;
   position: fixed;
   bottom: 250px;
-  right: 350px;
+  right: 48px;
   z-index: 99;
   border: none;
   outline: none;
@@ -12670,7 +12668,7 @@ main .area_01 img {
   width: 100%;
   height: auto;
 }
-main .area_01 h5, main .area_01 .h5 {
+main .area_01 h3, main .area_01 .h3 {
   color: #56C4C5;
   font-weight: bold;
   display: block;
@@ -12705,7 +12703,7 @@ main .area_02 ul li img {
   height: auto;
   margin-bottom: 24px;
 }
-main .area_02 ul li h4, main .area_02 ul li .h4 {
+main .area_02 ul li h3, main .area_02 ul li .h3 {
   font-size: 24px;
   line-height: 35px;
   font-weight: bold;
@@ -12739,7 +12737,7 @@ main .area_03 .roleBox .roleItem .roleInfo {
   text-align: center;
   padding: 16px 0px 24px;
 }
-main .area_03 .roleBox .roleItem .roleInfo span {
+main .area_03 .roleBox .roleItem .roleInfo h3, main .area_03 .roleBox .roleItem .roleInfo .h3 {
   display: block;
   color: #56C4C5;
   font-weight: bold;
@@ -12788,9 +12786,11 @@ main .area_04 .serviceBox li .serviceItem .service_icon {
   -webkit-box-pack: center;
   justify-content: center;
 }
-main .area_04 .serviceBox li .serviceItem h5, main .area_04 .serviceBox li .serviceItem .h5 {
+main .area_04 .serviceBox li .serviceItem h3, main .area_04 .serviceBox li .serviceItem .h3 {
   font-weight: bold;
   margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
 }
 main .area_04 .serviceBox li .serviceItem p {
   line-height: 24px;
@@ -12813,7 +12813,9 @@ main .area_04 .area_04_textBox {
 main .area_04 .area_04_textBox h2, main .area_04 .area_04_textBox .h2 {
   margin-bottom: 16px;
 }
-main .area_04 .area_04_textBox h5, main .area_04 .area_04_textBox .h5 {
+main .area_04 .area_04_textBox p {
+  font-size: 18px;
+  line-height: 26px;
   margin-bottom: 24px;
 }
 main .area_05 .owl-carousel {
@@ -13070,7 +13072,7 @@ footer {
   background-repeat: no-repeat;
 }
 footer .container {
-  padding: 260px 0 100px;
+  padding: 22% 0 100px;
   text-align: center;
 }
 footer .container p {
@@ -13085,16 +13087,6 @@ footer .copyright {
   text-align: center;
 }
 
-@media screen and (max-width: 1680px) {
-  body .pageContent #myBtn {
-    right: 200px;
-  }
-}
-@media screen and (max-width: 1366px) {
-  body .pageContent #myBtn {
-    right: 71px;
-  }
-}
 @media screen and (max-width: 1200px) {
   body .pageContent #myBtn {
     right: 16px;
@@ -13140,7 +13132,7 @@ footer .copyright {
   main.container .area_01 .area_01_textBox {
     margin-bottom: 1rem;
   }
-  main.container .area_01 .area_01_textBox h5, main.container .area_01 .area_01_textBox .h5 {
+  main.container .area_01 .area_01_textBox h3, main.container .area_01 .area_01_textBox .h3 {
     font-size: 16px;
     line-height: 24px;
   }
@@ -13272,7 +13264,7 @@ footer .copyright {
     max-width: 60px;
     margin-bottom: 16px;
   }
-  main .area_02 ul li h4, main .area_02 ul li .h4 {
+  main .area_02 ul li h3, main .area_02 ul li .h3 {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 16px;

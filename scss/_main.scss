@@ -39,15 +39,13 @@ h5{
 body{
     .pageContent{
         position: relative;
-        max-width: 1366px;
         width: 100%;
-        margin: 0 auto;
         background-repeat: no-repeat;
         #myBtn {
             display: block;
             position: fixed;
             bottom: 250px;
-            right: 350px;
+            right: 48px;
             z-index: 99;
             border: none;
             outline: none;
@@ -153,7 +151,7 @@ main{
             width: 100%;
             height: auto;
         }
-        h5{
+        h3{
             color: $primary;
             font-weight: bold;
             display: block;
@@ -186,7 +184,7 @@ main{
                     height: auto;
                     margin-bottom: 24px;
                 }
-                h4{
+                h3{
                     font-size: 24px;
                     line-height: 35px;
                     font-weight: bold;
@@ -224,7 +222,7 @@ main{
                 .roleInfo{
                     text-align: center;
                     padding: 16px 0px 24px;
-                    span{
+                    h3{
                         display: block;
                         color: $primary;
                         font-weight: bold;
@@ -283,9 +281,11 @@ main{
                         -moz-box-pack: center;
                         justify-content: center;
                     }
-                    h5{
+                    h3{
                         font-weight: bold;
                         margin-bottom: 16px;
+                        font-size: 18px;
+                        line-height: 26px;
                     }
                     p{
                         line-height: 24px;
@@ -314,7 +314,9 @@ main{
             h2{
                 margin-bottom: 16px;
             }
-            h5{
+            p{
+                font-size: 18px;
+                line-height: 26px;
                 margin-bottom: 24px;
             }
         }
@@ -620,7 +622,7 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     .container{
-        padding: 260px 0 100px;
+        padding: 22% 0 100px;
         text-align: center;
         p{
             font-size: 2rem;
@@ -636,24 +638,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 1680px) {
-    body{
-        .pageContent{
-            #myBtn {
-                right: 200px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 1366px) {
-    body{
-        .pageContent{
-            #myBtn {
-                right: 71px;
-            }
-        }
-    }
-}
 @media screen and (max-width: 1200px) {
     body{
         .pageContent{
@@ -697,7 +681,7 @@ footer{
             margin: 0 auto 90px;
             .area_01_textBox{
                 margin-bottom: 1rem;
-                h5{
+                h3{
                     font-size: 16px;
                     line-height: 24px;
                 }
@@ -860,7 +844,7 @@ footer{
                         max-width: 60px;
                         margin-bottom: 16px;
                     }
-                    h4{
+                    h3{
                         font-size: 18px;
                         line-height: 26px;
                         margin-bottom: 16px;
