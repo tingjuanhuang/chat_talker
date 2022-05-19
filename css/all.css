@@ -99,7 +99,7 @@ hr:not([size]) {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -150,7 +150,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -170,14 +170,14 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 0;
 }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 ol ol,
@@ -185,6 +185,10 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
+}
+
+li {
+  list-style: none;
 }
 
 dt {
@@ -12476,99 +12480,28 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1,
-.h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small,
-.small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, .mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 a {
   display: block;
   text-decoration: none;
 }
 
 .btn {
-  padding: 10px 32px;
-  font-size: 18px;
-  line-height: 26px;
-  border-radius: 27px;
+  padding: 12px 32px;
   color: #fff !important;
 }
 
 .fa-solid {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-style: normal;
 }
 
-h5, .h5 {
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.container {
-  max-width: 1080px;
-}
-
-body .pageContent {
-  position: relative;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-body .pageContent #myBtn {
-  display: block;
+#myBtn {
   position: fixed;
-  bottom: 250px;
-  right: 48px;
+  right: 16px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
   z-index: 99;
   border: none;
   outline: none;
@@ -12576,294 +12509,405 @@ body .pageContent #myBtn {
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 71px;
-  height: 71px;
   cursor: pointer;
-  border-radius: 100%;
   font-size: 18px;
 }
-body .pageContent #myBtn:hover {
-  background-color: #555;
+
+header {
+  border-bottom: 2px solid #FFD153;
+  background-color: #fff;
 }
-body#index .pageContent {
-  background-image: url(../images/bg_yellow.svg), url(../images/Ellipse3.svg), url(../images/Ellipse18.svg), url(../images/Ellipse19.svg);
-  background-position: right top, -180px 589px, 110% 1694px, 70px 2610px;
-  background-size: 850px, 360px, 310px, 150px;
+header .container {
+  padding: 16px 20px;
 }
-body#pricing .pageContent {
-  background-image: url(../images/pricing_bg1.svg), url(../images/pricing_bg2.svg);
-  background-position: right top, -250px 876px;
-  background-size: 885px, 361px;
-  position: relative;
+header h1, header .h1 {
+  height: 24px;
 }
-body#pricing .pageContent:after {
+header h1 .logo, header .h1 .logo {
+  width: auto;
+  height: 100%;
+}
+header h1 .logo img, header .h1 .logo img {
+  height: 100%;
+  vertical-align: top;
+}
+header .btn {
+  padding: 8px 32px;
+}
+
+main .areaTitle {
+  font-size: 28px;
+  line-height: 40px;
+}
+main .area_intro {
+  padding-top: 32px;
+  padding-bottom: 90px;
+}
+main .area_intro img {
+  max-width: 532px;
+  width: 100%;
+  height: auto;
+}
+main .area_intro .area_intro_textBox h3, main .area_intro .area_intro_textBox .h3 {
+  color: #56C4C5;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+main .area_intro .area_intro_textBox h2, main .area_intro .area_intro_textBox .h2 {
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 16px;
+}
+main .area_intro .area_intro_imgBox {
+  background-image: url(../images/path157.svg);
+  background-position: center 80px;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+main .area_intro .area_intro_imgBox img {
+  padding-bottom: 10px;
+}
+main .area_platform {
+  background-image: url(../images/Ellipse3.svg);
+  background-position: -85px 15px;
+  background-size: 126px;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+}
+main .area_platform ul {
+  padding-top: 32px;
+}
+main .area_platform ul li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+main .area_platform img {
+  max-width: 60px;
+  margin-bottom: 16px;
+}
+main .area_platform h3, main .area_platform .h3 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+main .area_platform p {
+  color: #747474;
+}
+main .area_role {
+  background-image: url(../images/Ellipse18.svg);
+  background-position: right 1660px;
+  background-size: 135px;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+}
+main .area_role .areaSubTitle {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 16px 0px 32px;
+  text-align: center;
+}
+main .area_role .roleBox li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+main .area_role .roleBox .roleItem {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 260px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+main .area_role img {
+  max-width: 100%;
+  height: auto;
+}
+main .area_role .roleInfo {
+  text-align: center;
+  padding: 16px 16px 24px;
+}
+main .area_role .roleInfo h3, main .area_role .roleInfo .h3 {
+  color: #56C4C5;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+main .area_role .roleInfo p {
+  min-height: 48px;
+}
+main .area_advantage {
+  padding-bottom: 60px;
+}
+main .area_advantage .area_advantageInner > .row {
+  -ms-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+          flex-direction: column-reverse;
+}
+main .area_advantage .serviceBox li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+main .area_advantage .serviceItem {
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  padding: 32px 24px 48px;
+}
+main .area_advantage .serviceItem .service_icon {
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  width: 86px;
+  height: 86px;
+}
+main .area_advantage .serviceItem h3, main .area_advantage .serviceItem .h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
+}
+main .area_advantage .serviceItem p {
+  margin-bottom: 0;
+}
+main .area_advantage .area_advantage_textBoxInner {
+  text-align: center;
+  padding-bottom: 32px;
+}
+main .area_advantage .area_advantage_textBox h2, main .area_advantage .area_advantage_textBox .h2 {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+main .area_advantage .area_advantage_textBox p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+main .area_review {
+  padding-bottom: 60px;
+  background-image: url(../images/Ellipse19.svg);
+  background-position: -20px 50px;
+  background-size: 153px;
+  background-repeat: no-repeat;
+}
+main .area_review .owl-carousel {
+  padding-top: 32px;
+}
+main .area_pricing_intro {
+  background-image: url(../images/pricing_bg1_mob.svg);
+  background-position: left top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 48px 0 500px 0;
+}
+main .area_pricing_intro:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
-  height: 470px;
-  border-radius: 0px 0px 0px 300px;
+  height: 610px;
+  border-radius: 0px 0px 0px 150px;
   background-color: #F7F9FD;
   z-index: -1;
 }
-
-header.container {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: space-between;
-  -webkit-box-pack: space-between;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  padding: 24px 0;
-}
-header.container h1, header.container .h1 {
-  margin-bottom: 0;
-  display: inline-block;
-  height: 40px;
-}
-header.container h1 .logo, header.container .h1 .logo {
-  display: inline-block;
-  width: auto;
-  height: 100%;
-}
-header.container h1 .logo img, header.container .h1 .logo img {
-  height: 100%;
-  vertical-align: top;
-}
-
-main {
-  padding-bottom: 100px;
-}
-main h2, main .h2 {
-  font-size: 2rem;
-  font-weight: bold;
+main .area_pricing_intro h2, main .area_pricing_intro .h2 {
+  font-size: 32px;
   line-height: 46px;
+  margin-bottom: 16px;
 }
-main .areaTitle {
+main .area_pricing_intro p {
+  margin-bottom: 0;
+}
+main .area_pricing_program {
+  background-image: url(../images/pricing_bg2.svg);
+  background-position: -150px 750px;
+  background-size: 220px;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+}
+main .area_pricing_program .nav {
+  padding: 48px 0;
+  -ms-flex-pack: flex-start;
+  -webkit-box-pack: flex-start;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  padding: 24px 10px 32px;
+}
+main .area_pricing_program .nav::-webkit-scrollbar {
+  display: none;
+}
+main .area_pricing_program .nav .nav-item:not(:last-of-type) {
+  margin-right: 6px;
+}
+main .area_pricing_program .nav .nav-link {
+  padding: 8px 16px;
+  white-space: nowrap;
+  border-radius: 65px;
+  border: 1px solid #56C4C5;
+  background-color: #fff;
+}
+main .area_pricing_program .nav .nav-link.active {
+  background-color: #56C4C5;
+}
+main .area_pricing_program .programBox .programItem {
+  max-width: 500px;
+  margin: 0 auto 24px;
+  background-color: #fff;
   text-align: center;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
 }
-main .area_01 {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  margin-bottom: 217px;
+main .area_pricing_program .programBox > div:last-of-type .programItem {
+  margin-bottom: 0;
 }
-main .area_01 img {
-  max-width: 532px;
-  width: 100%;
-  height: auto;
-}
-main .area_01 h3, main .area_01 .h3 {
-  color: #56C4C5;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 8px;
-}
-main .area_01 h2, main .area_01 .h2 {
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 70px;
-  margin-bottom: 1rem;
-}
-main .area_01 p {
-  font-size: 20px;
-  line-height: 29px;
-}
-main .area_02 {
-  margin-bottom: 100px;
-}
-main .area_02 ul {
-  margin-top: 40px;
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-}
-main .area_02 ul li {
-  text-align: center;
-}
-main .area_02 ul li img {
-  width: 90px;
-  height: auto;
-  margin-bottom: 24px;
-}
-main .area_02 ul li h3, main .area_02 ul li .h3 {
+main .area_pricing_program .programTitle {
+  padding: 16px 0;
   font-size: 24px;
   line-height: 35px;
-  font-weight: bold;
-  margin-bottom: 24px;
+  border-bottom: 1px solid #DDDDDD;
 }
-main .area_02 ul li p {
-  color: #747474;
-  line-height: 24px;
+main .area_pricing_program .programBottom {
+  padding: 32px 25px 38px;
 }
-main .area_03 {
-  margin-bottom: 188px;
-}
-main .area_03 .areaSubTitle {
-  padding: 16px 0px 48px;
+main .area_pricing_program .programBottom > p {
+  padding-bottom: 32px;
   text-align: center;
 }
-main .area_03 .roleBox .roleItem {
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
-  background-color: #fff;
+main .area_pricing_program .programBottom .programDetail {
+  padding-bottom: 32px;
+  font-size: 29px;
+  line-height: 42px;
+}
+main .area_pricing_program .programBottom .programDetail .subScribeBox {
+  background-color: #F5F5F5;
   border-radius: 12px;
-  max-width: 480px;
-  margin: 0 auto;
-  overflow: hidden;
+  padding: 24px 0;
 }
-main .area_03 .roleBox .roleItem img {
-  max-width: 100%;
-  height: auto;
+main .area_pricing_program .programBottom .programDetail .subScribeBox > span {
+  font-size: 12px;
+  line-height: 17px;
+  padding-bottom: 8px;
+  -webkit-box-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
 }
-main .area_03 .roleBox .roleItem .roleInfo {
-  text-align: center;
-  padding: 16px 0px 24px;
-}
-main .area_03 .roleBox .roleItem .roleInfo h3, main .area_03 .roleBox .roleItem .roleInfo .h3 {
-  display: block;
+main .area_pricing_program .programBottom .programDetail .subScribeBox .programNum.programNumPeople {
   color: #56C4C5;
-  font-weight: bold;
-  padding-bottom: 16px;
 }
-main .area_03 .roleBox .roleItem .roleInfo p {
-  line-height: 24px;
-  min-height: 48px;
+main .area_pricing_program .programBottom .programDetail .subScribeBox .programNum p {
+  font-size: 32px;
+  line-height: 35px;
+  padding-right: 8px;
 }
-main .area_04 {
-  margin-bottom: 100px;
+main .area_pricing_program .programBottom .programDetail .subScribeBox .programNum .unit {
+  font-size: 12px;
+  line-height: 17px;
 }
-main .area_04 .serviceBox {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
+main .area_pricing_program .programBottom .programList {
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 0 32px 5px;
+  text-align: left;
 }
-main .area_04 .serviceBox li:nth-child(1), main .area_04 .serviceBox li:nth-child(2) {
-  margin-bottom: 28px;
+main .area_pricing_program .programBottom .programList li {
+  padding-left: 24px;
+  margin-bottom: 16px;
+  background-image: url(../images/checkmark-outline.svg);
+  background-position: center left;
+  background-size: 16px;
+  background-repeat: no-repeat;
 }
-main .area_04 .serviceBox li .serviceItem {
+main .area_pricing_program .programBottom .programList li:last-of-type {
+  margin-bottom: 0;
+}
+main .area_pricing_program .programBottom .btn {
+  font-size: 18px;
+  line-height: 26px;
+}
+main .area_pricing_program .programDetail .col-1 {
+  padding: 0;
+}
+main .area_pricing_faq {
+  padding-bottom: 60px;
+}
+main .area_pricing_faq .accordion {
+  padding-top: 32px;
+}
+main .area_pricing_faq .accordion .accordion-item {
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
+  border: 0;
   border-radius: 12px;
-  padding: 32px;
 }
-main .area_04 .serviceBox li .serviceItem .service_icon {
-  margin-bottom: 24px;
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
-  border-radius: 100%;
-  width: 86px;
-  height: 86px;
-  text-align: center;
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
+main .area_pricing_faq .accordion .accordion-item:not(:last-of-type) {
+  margin-bottom: 16px;
 }
-main .area_04 .serviceBox li .serviceItem h3, main .area_04 .serviceBox li .serviceItem .h3 {
+main .area_pricing_faq .accordion-button:after {
+  background-image: url(../images/accordion_toggle.svg);
+  background-size: 20px;
+  background-position: center top;
+}
+main .area_pricing_faq .accordion-button:not(.collapsed):after {
+  background-position: center bottom;
+}
+main .area_pricing_faq .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+main .area_pricing_faq .accordion-button:not(.collapsed) {
+  background-color: transparent;
   font-weight: bold;
-  margin-bottom: 16px;
-  font-size: 18px;
-  line-height: 26px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
-main .area_04 .serviceBox li .serviceItem p {
-  line-height: 24px;
+main .area_pricing_faq .accordion-body {
+  color: #747474;
+  line-height: 32px;
+  padding: 8px 20px 16px;
 }
-main .area_04 .area_04_textBox {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+main .reviewItem {
+  max-width: 352px;
+  margin: 0 auto;
 }
-main .area_04 .area_04_textBox h2, main .area_04 .area_04_textBox .h2 {
-  margin-bottom: 16px;
-}
-main .area_04 .area_04_textBox p {
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 24px;
-}
-main .area_05 .owl-carousel {
-  padding-top: 33px;
-}
-main .area_05 .owl-carousel .reviewItem .reviewPerson {
+main .reviewItem .reviewPerson {
   position: absolute;
-  top: 0;
+  top: -65px;
   left: 0;
 }
-main .area_05 .owl-carousel .reviewItem .reviewPerson img {
+main .reviewItem .reviewPerson img {
   max-width: 110px;
   width: 100%;
   height: auto;
 }
-main .area_05 .owl-carousel .reviewItem .reviewInfo {
-  margin: 56px 0 24px;
+main .reviewItem .reviewInfo {
+  margin: 53px 0 0;
   padding: 48px 28px 24px;
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
   background-color: #fff;
   border-radius: 12px;
 }
-main .area_05 .owl-carousel .reviewItem .reviewInfo p {
-  line-height: 24px;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
+main .reviewItem .reviewInfo p {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ddd;
 }
-main .area_05 .owl-carousel .reviewItem .reviewInfo span {
-  font-weight: bold;
-  display: block;
-  line-height: 24px;
+main .reviewItem .reviewInfo span {
   margin-bottom: 8px;
 }
-main .area_05 .owl-carousel .reviewItem .reviewInfo ul {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: space-between;
-  -webkit-box-pack: space-between;
-  justify-content: space-between;
-}
-main .area_05 .owl-carousel .reviewItem .reviewInfo ul .reviewStar i:before {
+main .reviewItem .reviewInfo ul .reviewStar i:before {
   color: #F5CA52;
 }
-main .area_05 .owl-carousel .owl-dots {
+
+.owl-carousel .owl-dots {
   text-align: center;
 }
-main .area_05 .owl-carousel .owl-dots .owl-dot {
+.owl-carousel .owl-dots .owl-dot {
   width: 10px;
   height: 10px;
   border-radius: 50px;
@@ -12873,443 +12917,248 @@ main .area_05 .owl-carousel .owl-dots .owl-dot {
   border-bottom: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  margin: 4px;
+  margin: 0 4px;
 }
-main .area_05 .owl-carousel .owl-dots .owl-dot.active {
+.owl-carousel .owl-dots .owl-dot.active {
   background-color: #FFD153;
   width: 16px;
 }
-main .pricing_area_01 {
-  padding-top: 92px;
-}
-main .pricing_area_01 h2, main .pricing_area_01 .h2 {
-  font-size: 48px;
-  line-height: 70px;
-  margin-bottom: 1rem;
-}
-main .pricing_area_02 {
-  padding-top: 280px;
-  padding-bottom: 100px;
-}
-main .pricing_area_02 .nav {
-  padding: 48px 0;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-main .pricing_area_02 .nav .nav-item:not(:last-of-type) {
-  margin-right: 16px;
-}
-main .pricing_area_02 .nav .nav-item .nav-link {
-  line-height: 26px;
-  padding: 12px 32px;
-  border-radius: 65px;
-  font-size: 18px;
-  border: 1px solid #56C4C5;
-  background-color: #fff;
-}
-main .pricing_area_02 .nav .nav-item .nav-link.active {
-  background-color: #56C4C5;
-}
-main .pricing_area_02 .programBox {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: space-between;
-  -webkit-box-pack: space-between;
-  justify-content: space-between;
-}
-main .pricing_area_02 .programBox .programItem {
-  background-color: #fff;
-  text-align: center;
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
-  border-radius: 12px;
-}
-main .pricing_area_02 .programBox .programItem .programTitle {
-  padding: 16px 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 35px;
-  border-bottom: 1px solid #DDDDDD;
-}
-main .pricing_area_02 .programBox .programItem .programBottom {
-  padding: 32px 25px 38px;
-}
-main .pricing_area_02 .programBox .programItem .programBottom > p {
-  padding-bottom: 32px;
-  text-align: center;
-  line-height: 24px;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programDetail {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  padding-bottom: 32px;
-  text-align: center;
-  font-size: 29px;
-  line-height: 42px;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programDetail .subScribeBox {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  background-color: #F5F5F5;
-  border-radius: 12px;
-  padding: 24px 0;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programDetail .subScribeBox > span {
-  font-size: 12px;
-  line-height: 17px;
-  padding-bottom: 8px;
-  -webkit-box-flex: 100%;
-  -ms-flex: 100%;
-  flex: 100%;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programDetail .subScribeBox .programNum {
-  display: -ms-box;
-  display: -moz-webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -ms-flex-align: flex-end;
-  -webkit-box-align: end;
-          align-items: flex-end;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programDetail .subScribeBox .programNum.programNumPeople {
-  color: #56C4C5;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programDetail .subScribeBox .programNum p {
-  font-size: 32px;
-  line-height: 35px;
-  padding-right: 8px;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programDetail .subScribeBox .programNum .unit {
-  font-size: 12px;
-  line-height: 17px;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programList {
-  padding-bottom: 32px;
-  text-align: left;
-}
-main .pricing_area_02 .programBox .programItem .programBottom .programList li {
-  padding-left: 24px;
-  margin-bottom: 16px;
-  background-image: url(../images/checkmark-outline.svg);
-  background-position: center left;
-  background-size: 16px;
-  background-repeat: no-repeat;
-}
-main .pricing_area_03 .accordion {
-  padding-top: 48px;
-}
-main .pricing_area_03 .accordion .accordion-item {
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
-  border: 0;
-  border-radius: 12px;
-}
-main .pricing_area_03 .accordion .accordion-item:not(:last-of-type) {
-  margin-bottom: 16px;
-}
-main .pricing_area_03 .accordion .accordion-item .accordion-button {
-  font-size: 18px;
-  line-height: 28px;
-}
-main .pricing_area_03 .accordion .accordion-item .accordion-button:after {
-  background-image: url(../images/accordion_toggle.svg);
-  background-size: 20px;
-  background-position: center top;
-}
-main .pricing_area_03 .accordion .accordion-item .accordion-button:not(.collapsed):after {
-  background-position: center bottom;
-}
-main .pricing_area_03 .accordion .accordion-item .accordion-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-main .pricing_area_03 .accordion .accordion-item .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  font-weight: bold;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-main .pricing_area_03 .accordion .accordion-item .accordion-body {
-  color: #747474;
-  line-height: 32px;
-  padding: 0.5rem 1.25rem 1rem;
-}
 
 footer {
-  background-image: url(../images/footer_bg.png);
+  background-image: url(../images/footer_bg_mob.svg);
   background-position: top center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 footer .container {
-  padding: 22% 0 100px;
+  padding: 75% 0 60px;
   text-align: center;
 }
 footer .container p {
-  font-size: 2rem;
-  line-height: 46px;
-  font-weight: bold;
-  margin-bottom: 48px;
+  font-size: 24px;
+  margin-bottom: 24px;
 }
 footer .copyright {
   background-color: #F5F5F5;
   padding: 16px 0;
-  text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-  body .pageContent #myBtn {
-    right: 16px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
+@media screen and (min-width: 576px) {
+  #myBtn {
+    bottom: 250px;
+    right: 48px;
+    width: 71px;
+    height: 71px;
   }
-  body#index .pageContent {
-    max-width: 1366px;
+
+  main .area_pricing_intro {
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background-image: url(../images/pricing_bg1.svg);
+    background-position: right top;
+    background-size: contain;
+  }
+  main .area_pricing_intro:after {
+    height: 470px;
+  }
+  main .area_pricing_program .nav {
+    overflow-y: hidden;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  main .area_pricing_program .nav::-webkit-scrollbar {
+    display: block;
+  }
+
+  footer .container {
+    padding-top: 65%;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    border-bottom: 0;
+    background-color: transparent;
     width: 100%;
-    margin: 0 auto;
-    background-image: url(../images/Ellipse3.svg), url(../images/Ellipse18.svg), url(../images/Ellipse19.svg);
-    background-position: -85px 800px, 120% 3120px, -80px 4900px;
-    background-size: 126px, 135px, 153px;
+    position: absolute;
+  }
+  header .container {
+    padding: 24px 0;
+  }
+  header h1, header .h1 {
+    height: 40px;
   }
 
-  .container {
-    max-width: 100%;
-  }
-
-  header.container {
-    border-bottom: 2px solid #FFD153;
-    padding: 16px 20px;
-    background-color: #fff;
-  }
-  header.container h1, header.container .h1 {
-    height: 24px;
-  }
-  header.container .btn {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 8px 24px;
-  }
-
-  main.container {
-    padding-top: 32px;
-    padding-bottom: 60px;
-  }
-  main.container .area_01 {
-    max-width: 555px;
-    margin: 0 auto 90px;
-  }
-  main.container .area_01 .area_01_textBox {
-    margin-bottom: 1rem;
-  }
-  main.container .area_01 .area_01_textBox h3, main.container .area_01 .area_01_textBox .h3 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  main.container .area_01 .area_01_textBox h2, main.container .area_01 .area_01_textBox .h2 {
-    font-size: 2rem;
-    line-height: 46px;
-  }
-  main.container .area_01 .area_01_textBox p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  main.container .area_01 .area_01_imgBox {
-    background-image: url(../images/path157.svg);
-    background-position: center 80px;
-    background-size: 100%;
+  main .area_intro {
+    background-image: url(../images/bg_yellow.svg);
+    background-position: right top;
+    background-size: 850px;
     background-repeat: no-repeat;
-  }
-  main.container .area_01 .area_01_imgBox img {
-    padding-bottom: 10px;
-  }
-  main.container .area_02 li:not(:last-of-type) {
-    margin-bottom: 24px;
-  }
-  main.container .area_03 {
-    margin-bottom: 60px;
-  }
-  main.container .area_03 .roleBox li {
-    margin-bottom: 24px;
-  }
-  main.container .area_04 {
-    -ms-flex-direction: column-reverse;
-    -moz-flex-direction: column-reverse;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-            flex-direction: column-reverse;
-  }
-  main.container .area_04 .area_04_textBoxInner {
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-top: 118px;
+    padding-bottom: 110px;
     text-align: center;
-    margin-bottom: 32px;
   }
-  main.container .area_04 .serviceBox li {
-    margin-bottom: 28px;
+  main .area_intro .area_intro_textBox h3, main .area_intro .area_intro_textBox .h3 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
   }
-  main.container .area_04 .serviceBox li .serviceItem {
-    max-width: 230px;
-    margin: 0 auto;
+  main .area_intro .area_intro_textBox h2, main .area_intro .area_intro_textBox .h2 {
+    font-size: 48px;
+    line-height: 70px;
   }
-  main.container .area_05 .reviewItem {
-    max-width: 352px;
-    position: relative;
-    margin: 0 auto;
+  main .area_intro .area_intro_textBox p {
+    font-size: 20px;
+    line-height: 29px;
   }
-  main.container .area_05 .reviewItem .reviewPerson {
-    top: -65px;
+  main .area_intro .area_intro_imgBox {
+    background-image: none;
   }
-  main.container .pricing_area_01 {
-    padding: 80px 0 0 40px;
-  }
-}
-@media screen and (max-width: 992px) {
   main .areaTitle {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  main .pricing_area_01 {
-    padding: 60px 0 0 40px;
-  }
-  main .pricing_area_01 h2, main .pricing_area_01 .h2 {
     font-size: 32px;
     line-height: 46px;
   }
-  main .pricing_area_02 {
-    padding-bottom: 60px;
+  main .area_platform {
+    background-image: url(../images/Ellipse3.svg);
+    background-position: -180px 0;
+    background-size: 360px;
+    padding-top: 95px;
+    padding-bottom: 100px;
   }
-  main .pricing_area_02 .nav {
-    width: 100%;
-    overflow-y: scroll;
-    padding: 24px 0 0 10px;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-  main .pricing_area_02 .nav::-webkit-scrollbar {
-    display: none;
-  }
-  main .pricing_area_02 .nav .nav-item .nav-link {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 8px 16px;
-    white-space: nowrap;
-  }
-  main .pricing_area_02 .tab-content {
-    padding-top: 32px;
-  }
-  main .pricing_area_02 .programBox .programItem {
-    max-width: 500px;
-    margin: 0 auto 24px;
-  }
-  main .pricing_area_02 .programBox .programItem .programBottom .programList {
-    line-height: 20px;
-    font-size: 14px;
-  }
-  main .pricing_area_02 .programBox > div:last-of-type .programItem {
+  main .area_platform ul li:not(:last-of-type) {
     margin-bottom: 0;
   }
-  main .pricing_area_03 .accordion {
-    padding-top: 32px;
+  main .area_platform p {
+    font-size: 14px;
   }
-}
-@media screen and (max-width: 576px) {
-  body#pricing .pageContent {
-    background-image: url(../images/pricing_bg1_mob.svg), url(../images/pricing_bg2.svg);
-    background-position: left 76px, -150px 1250px;
-    background-size: contain, 220px;
-    position: relative;
+  main .area_role .areaSubTitle {
+    font-size: 20px;
+    line-height: 29px;
+    padding-bottom: 48px;
   }
-  body#pricing .pageContent:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 610px;
-    border-radius: 0px 0px 0px 300px;
-    background-color: #F7F9FD;
-    z-index: -1;
+  main .area_pricing_intro {
+    padding-top: 350px;
+    padding-bottom: 150px;
+    background-size: 885px;
   }
-
-  main .area_02 ul li .socialItem {
-    max-width: 60px;
-    margin-bottom: 16px;
+  main .area_pricing_intro h2, main .area_pricing_intro .h2 {
+    font-size: 48px;
+    line-height: 70px;
   }
-  main .area_02 ul li h3, main .area_02 ul li .h3 {
-    font-size: 18px;
+  main .area_pricing_program {
+    background-position: -250px 250px;
+    background-size: 361px;
+    padding-bottom: 100px;
+  }
+  main .area_pricing_program .nav .nav-item .nav-link {
     line-height: 26px;
-    margin-bottom: 16px;
+    font-size: 18px;
+    padding: 12px 32px;
   }
-  main .area_03 .roleBox .roleItem {
-    max-width: 260px;
-  }
-  main .pricing_area_01 {
-    padding: 16px 0 0 20px;
-  }
-  main .pricing_area_02 {
-    padding-top: 550px;
-  }
-  main .pricing_area_02 .nav {
-    -ms-flex-pack: flex-start;
-    -webkit-box-pack: flex-start;
-    justify-content: flex-start;
-  }
-  main .pricing_area_02 .programDetail .col-1 {
-    padding: 0;
-  }
-
-  footer {
-    background-image: url(../images/footer_bg_mob.png);
-    background-size: 100%;
-  }
-  footer .container {
-    padding: 70% 0 60px;
-  }
-}
-@media screen and (max-width: 480px) {
-  main.container .pricing_area_01 {
-    padding: 48px 0 0 10px;
-  }
-  main.container .pricing_area_02 {
-    padding-top: 480px;
+  main .area_pricing_faq .accordion {
+    padding-top: 48px;
   }
 
   footer .container p {
-    font-size: 1.5rem;
-    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 48px;
   }
 }
-@media screen and (max-width: 390px) {
-  main.container .pricing_area_01 {
-    padding: 30px 0 0 10px;
+@media screen and (min-width: 992px) {
+  main .area_platform ul {
+    padding-top: 48px;
   }
-  main.container .pricing_area_02 {
-    padding-top: 420px;
+  main .area_platform img {
+    max-width: 90px;
+    margin-bottom: 24px;
+  }
+  main .area_platform p {
+    font-size: 16px;
+  }
+  main .area_platform h3, main .area_platform .h3 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 24px;
+  }
+  main .area_pricing_intro {
+    padding-top: 180px;
+    padding-bottom: 280px;
+  }
+  main .area_pricing_program .nav .nav-item:not(:last-of-type) {
+    margin-right: 16px;
+  }
+  main .area_pricing_program .nav .nav-item .nav-link {
+    line-height: 26px;
+    font-size: 18px;
+    padding: 12px 32px;
+  }
+  main .area_pricing_program .programBox .programItem {
+    margin-bottom: 0;
+  }
+  main .area_pricing_program .programBox .programItem .programBottom .programList {
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  footer {
+    background-image: url(../images/footer_bg.svg);
+  }
+  footer .container {
+    padding: 25% 0 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .area_intro {
+    text-align: left;
+  }
+  main .area_role {
+    background-position: 1350px 315px;
+    background-size: 310px;
+    padding-bottom: 100px;
+  }
+  main .area_role .roleBox li {
+    margin-bottom: 0;
+  }
+  main .area_role .roleBox .roleItem {
+    max-width: 100%;
+  }
+  main .area_advantage {
+    padding-bottom: 100px;
+  }
+  main .area_advantage .area_advantageInner > .row {
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+  main .area_advantage .area_advantage_textBoxInner {
+    text-align: left;
+  }
+  main .area_advantage .serviceBox li:nth-child(3) {
+    margin-bottom: 0;
+  }
+  main .area_advantage .serviceItem {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main .area_review .owl-carousel {
+    padding-top: 48px;
+  }
+  main .reviewItem .reviewInfo p {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+  main .area_pricing_faq .accordion-button {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  footer .container {
+    padding-top: 20%;
   }
 }
 /**
